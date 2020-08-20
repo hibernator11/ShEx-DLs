@@ -10,7 +10,7 @@ start = @<person>
  (
      (rdf:type	ns2:C1001)
  )
-
+}
 
 #<person> {
 #  (
