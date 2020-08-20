@@ -1,0 +1,19 @@
+# Person at datos.bne.es
+# 
+
+@prefix ns2:	<http://datos.bne.es/def/> .
+#ns1:XX2348547	rdf:type	ns2:C1001 .
+
+start = @<person>
+<person> {
+ (
+     (rdf:type	ns2:C1001)
+ )
+
+
+#<person> {
+#  (
+#    (wdt:P31 [wd:Q43229]; wdt:P31 .*) |
+#    (wdt:P31 @<subclass_of_organization>; wdt:P31 .*)
+#  )
+#}
