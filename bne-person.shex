@@ -1,8 +1,8 @@
 # Person at datos.bne.es
 # 
 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-PREFIX ns2:	<http://datos.bne.es/def/> .
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX ns2:	<http://datos.bne.es/def/> 
 #ns1:XX2348547	rdf:type	ns2:C1001 .
 
 start = @<person>
