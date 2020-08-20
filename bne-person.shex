@@ -1,20 +1,13 @@
 # Person at datos.bne.es
-# 
+# http://datos.bne.es/def/C1005
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ns2:	<http://datos.bne.es/def/> 
-#ns1:XX2348547	rdf:type	ns2:C1001 .
 
 start = @<person>
 <person> {
- (
-     (rdf:type	ns2:C1001)
- )
+ rdfs:label  xsd:string ;
+ ns2:P1002 xsd:string *;
 }
 
-#<person> {
-#  (
-#    (wdt:P31 [wd:Q43229]; wdt:P31 .*) |
-#    (wdt:P31 @<subclass_of_organization>; wdt:P31 .*)
-#  )
-#}
