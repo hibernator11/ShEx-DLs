@@ -4,7 +4,7 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bne-person.shex",
         "dataLabel": "Get 20 items typed as person from datos.bne.es" ,
         "data": "Endpoint: http://datos.bne.es/sparql",
-        "queryMap": "SPARQL '''select ?item where { ?item rdf:type ns2:C1001} limit 20'''@START",
+        "queryMap": "SPARQL '''select ?item where {\r\n ?item rdf:type ns2:C1001\r\n}\r\n limit 20'''@START",
         "status": "conformant"
     },
     {
