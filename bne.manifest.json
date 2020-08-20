@@ -12,7 +12,7 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb.shex",
         "dataLabel": "Get 20 items typed as book from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
-        "queryMap": "SPARQL '''select ?book where {\r\n ?book rdf:type bibo:Book\r\n}\r\n limit 20'''@START",
+        "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?book where {\r\n ?book rdf:type bibo:Book\r\n}\r\n limit 20'''@START",
         "status": "conformant"
     },
     {
