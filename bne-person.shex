@@ -1,7 +1,7 @@
 # Person at datos.bne.es
 # 
 
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ns2:	<http://datos.bne.es/def/> .
 #ns1:XX2348547	rdf:type	ns2:C1001 .
 
