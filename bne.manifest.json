@@ -1,0 +1,26 @@
+[
+    {
+        "schemaLabel": "BNE person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bne-person.shex",
+        "dataLabel": "Get 20 items typed as person from datos.bne.es" ,
+        "data": "Endpoint: http://datos.bne.es/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n  ?item rdf:type	ns2:C1001 .\r\n}\r\nlimit 20'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "Wikidata organization class derived from PM20 ID",
+        "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-organization.shex",
+        "dataLabel": "Get 20 items with PM20 ids starting with 'co/'" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n  ?item wdt:P4293 ?pm20Id .\r\n  filter(regex(?pm20Id, '^co\/'))\r\n}\r\nlimit 20'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "Wikidata organization class derived from PM20 ID",
+        "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-organization.shex",
+        "dataLabel": "Get all items with PM20 ids starting with 'co/'" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n  ?item wdt:P4293 ?pm20Id .\r\n  filter(regex(?pm20Id, '^co\/'))\r\n}\r\nlimit 20'''@START",
+        "status": "conformant"
+    }
+]
