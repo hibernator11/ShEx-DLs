@@ -1,12 +1,5 @@
 [
-    {
-        "schemaLabel": "BNE person",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bne-person.shex",
-        "dataLabel": "Get 20 items typed as person from datos.bne.es" ,
-        "data": "Endpoint: http://datos.bne.es/sparql",
-        "queryMap": "SPARQL '''select ?item where {\r\n ?item rdf:type ns2:C1005\r\n}\r\n limit 20'''@START",
-        "status": "conformant"
-    },
+    
     {
         "schemaLabel": "BNB book",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-book.shex",
@@ -20,7 +13,15 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-person.shex",
         "dataLabel": "Get 100 items typed as person from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
-        "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1>\r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB SKOS Concept",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-concept.shex",
+        "dataLabel": "Get 100 items typed as skos:Concept from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\r\n select ?person where {\r\n ?person rdf:type skos:Concept\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
@@ -38,5 +39,13 @@
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''select ?item where {\r\n  ?item wdt:P4293 ?pm20Id .\r\n  filter(regex(?pm20Id, '^co\/'))\r\n}\r\nlimit 20'''@START",
         "status": "conformant"
-    }
+    },
+    {
+        "schemaLabel": "BNE person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bne-person.shex",
+        "dataLabel": "Get 20 items typed as person from datos.bne.es" ,
+        "data": "Endpoint: http://datos.bne.es/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n ?item rdf:type ns2:C1005\r\n}\r\n limit 20'''@START",
+        "status": "conformant"
+    },
 ]
