@@ -3,7 +3,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>
@@ -12,8 +11,7 @@ PREFIX schema: <http://schema.org/>
 start = @<book>
 <book> {
  rdfs:label  xsd:string ;
- dc:title xsd:string ;
- dc:title xsd:string ;
+ dct:title xsd:string ;
  blterms:bnb xsd:string ;
  dct:language IRI* ;
  dct:subject  IRI* ;
