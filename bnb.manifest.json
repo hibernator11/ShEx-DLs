@@ -1,6 +1,6 @@
 [   
     {
-        "schemaLabel": "BNB book",
+        "schemaLabel": "BNB bibo:Book",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-book.shex",
         "dataLabel": "Get 100 items typed as book from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
@@ -8,7 +8,7 @@
         "status": "conformant"
     },
     {
-        "schemaLabel": "BNB person",
+        "schemaLabel": "BNB foaf:Person",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-person.shex",
         "dataLabel": "Get 100 items typed as person from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
@@ -16,7 +16,7 @@
         "status": "conformant"
     },
     {
-        "schemaLabel": "BNB SKOS Concept",
+        "schemaLabel": "BNB skos:Concept",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-concept.shex",
         "dataLabel": "Get 100 items typed as skos:Concept from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
