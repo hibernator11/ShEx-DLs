@@ -9,6 +9,7 @@ PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>
 PREFIX schema: <http://schema.org/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX isbd: <http://iflastandards.info/ns/isbd/elements/>
+PREFIX rdau: <http://rdaregistry.info/Elements/u/">
 
 start = @<book>
 <book> {
@@ -33,4 +34,7 @@ start = @<book>
  owl:sameAs IRI* ;
  isbd:P1053 rdf:langString* ;
  isbd:P1042 rdf:langString* ;
+ rdau:P60048 IRI* ;
+ rdau:P60049 IRI* ;
+ rdau:P60050 IRI* ;
 }
