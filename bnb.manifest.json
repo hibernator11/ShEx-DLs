@@ -17,7 +17,7 @@
     },
     {
         "schemaLabel": "BNB foaf:Person",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-person.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
         "dataLabel": "Get 100 items typed as person from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
         "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1>\r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n limit 100'''@START",
@@ -25,10 +25,26 @@
     },
     {
         "schemaLabel": "BNB foaf:Person",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-person.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
         "dataLabel": "Get all items typed as person from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
         "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1>\r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB foaf:Organization",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
+        "dataLabel": "Get 100 items typed as organization from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1>\r\n select ?organization where {\r\n ?organization rdf:type foaf:Organization\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB foaf:Organization",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
+        "dataLabel": "Get all items typed as organization from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1>\r\n select ?organization where {\r\n ?organization rdf:type foaf:Organization\r\n}\r\n'''@START",
         "status": "conformant"
     },
     {
