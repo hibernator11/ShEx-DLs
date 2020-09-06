@@ -7,6 +7,8 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>
 PREFIX schema: <http://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX isbd: <http://iflastandards.info/ns/isbd/elements/>
 
 start = @<book>
 <book> {
@@ -16,6 +18,11 @@ start = @<book>
  dct:language IRI* ;
  dct:subject  IRI* ;
  bibo:isbn13 xsd:string* ;
+ schema:isbn xsd:string* ;
+ schema:identifier IRI+ ;
  schema:datePublished xsd:string ;
+ schema:name xsd:string ;
  blterms:projectedPublication IRI* ;
+ owl:sameAs IRI* ;
+ isbd:P1053 xsd:string* ;
 }
