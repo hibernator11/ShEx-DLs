@@ -12,8 +12,8 @@ PREFIX bio: <http://purl.org/vocab/bio/0.1/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1>
 PREFIX rdau: <http://rdaregistry.info/Elements/u/>
 
-start = @<person>
-<person> {
+start = @<agent>
+<agent> {
  rdfs:label  xsd:string* ;
  schema:name xsd:string* ;
  schema:birthDate xsd:string* ;
