@@ -10,9 +10,17 @@
     {
         "schemaLabel": "BNB book",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-book.shex",
-        "dataLabel": "Get 20 items typed as book from bnb.data.bl.uk" ,
+        "dataLabel": "Get 100 items typed as book from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
         "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?book where {\r\n ?book rdf:type bibo:Book\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-person.shex",
+        "dataLabel": "Get 100 items typed as person from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
