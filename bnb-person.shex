@@ -16,13 +16,14 @@ start = @<person>
 <person> {
  rdfs:label  xsd:string ;
  schema:name xsd:string* ;
- schema:birthDate xsd:integer? ;
- schema:deathDate xsd:integer? ;
+ schema:birthDate xsd:string* ;
+ schema:deathDate xsd:string* ;
  owl:sameAs IRI* ;
- foaf:givenName xsd:string ;
- foaf:familyName xsd:string ;
+ foaf:givenName xsd:string? ;
+ foaf:familyName xsd:string? ;
+ foaf:name xsd:string? ;
  blterms:hasContributedo IRI* ;
  blterms:hasCreated IRI* ;
  bio:event IRI* ;
- rdau:P60076 xsd:string ;
+ rdau:P60076 xsd:string* ;
  }
