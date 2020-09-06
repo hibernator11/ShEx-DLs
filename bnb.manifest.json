@@ -1,5 +1,4 @@
-[
-    
+[   
     {
         "schemaLabel": "BNB book",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-book.shex",
@@ -47,5 +46,5 @@
         "data": "Endpoint: http://datos.bne.es/sparql",
         "queryMap": "SPARQL '''select ?item where {\r\n ?item rdf:type ns2:C1005\r\n}\r\n limit 20'''@START",
         "status": "conformant"
-    },
+    }
 ]
