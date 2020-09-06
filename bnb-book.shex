@@ -17,12 +17,20 @@ start = @<book>
  blterms:bnb xsd:string ;
  dct:language IRI* ;
  dct:subject  IRI* ;
+ dct:alternative xsd:string* ;
+ dct:description rdf:langString* ;
+ dct:abstract rdf:langString* ;
+ dct:spatial IRI* ;
  bibo:isbn13 xsd:string* ;
  schema:isbn xsd:string* ;
  schema:identifier IRI+ ;
  schema:datePublished xsd:string ;
  schema:name xsd:string ;
+ schema:author IRI* ;
+ schema:contributor IRI* ;
  blterms:projectedPublication IRI* ;
+ blterms:publication IRI* ;
  owl:sameAs IRI* ;
- isbd:P1053 rdf:langString ;
+ isbd:P1053 rdf:langString* ;
+ isbd:P1042 rdf:langString* ;
 }
