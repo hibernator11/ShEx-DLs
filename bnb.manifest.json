@@ -25,10 +25,18 @@
     },
     {
         "schemaLabel": "BNB blterms:ProjectedPublicationEvent",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-projectedpublication.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-publication.shex",
         "dataLabel": "Get 100 items typed as blterms:ProjectedPublicationEvent from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnb.data.bl.uk/sparql",
         "queryMap": "SPARQL '''PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>\r\n select ?pub where {\r\n ?pub rdf:type blterms:ProjectedPublicationEvent\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB blterms:PublicationEvent",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-publication.shex",
+        "dataLabel": "Get 100 items typed as blterms:PublicationEvent from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>\r\n select ?pub where {\r\n ?pub rdf:type blterms:PublicationEvent\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
