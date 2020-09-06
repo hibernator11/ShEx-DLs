@@ -23,6 +23,7 @@ start = @<book>
  dct:abstract rdf:langString* ;
  dct:spatial IRI* ;
  bibo:isbn13 xsd:string* ;
+ bibo:isbn10 xsd:string* ;
  schema:isbn xsd:string* ;
  schema:identifier IRI+ ;
  schema:datePublished xsd:string ;
@@ -34,6 +35,7 @@ start = @<book>
  owl:sameAs IRI* ;
  isbd:P1053 rdf:langString* ;
  isbd:P1042 rdf:langString* ;
+ isbd:P1073 rdf:langString* ;
  rdau:P60048 IRI* ;
  rdau:P60049 IRI* ;
  rdau:P60050 IRI* ;
