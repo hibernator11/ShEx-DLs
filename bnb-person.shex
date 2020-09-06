@@ -1,0 +1,26 @@
+# https://bnb.data.bl.uk/sparql
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>
+PREFIX schema: <http://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+
+start = @<person>
+<person> {
+ rdfs:label  xsd:string ;
+ schema:name xsd:string* ;
+ schema:birthDate xsd:integer+ ;
+ schema:deathDate xsd:integer+ ;
+ owl:sameAs IRI* ;
+ foaf:givenName xsd:string ;
+ foaf:familyName xsd:string ;
+ blterms:hasContributedo IRI* ;
+ blterms:hasCreated IRI* ;
+ bio:event IRI* ;
+ rdau:P60076 xsd:string ;
+ }
