@@ -2,7 +2,7 @@
     {
         "schemaLabel": "BNF frbr-rda:Work",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work.shex",
-        "dataLabel": "Get 100 items typed as book from bnb.data.bl.uk" ,
+        "dataLabel": "Get 100 items typed as work from bnf.data.fr" ,
         "data": "Endpoint: https://bnf.data.fr/sparql",
         "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?book where {\r\n ?book rdf:type bibo:Book\r\n}\r\n limit 100'''@START",
         "status": "conformant"
