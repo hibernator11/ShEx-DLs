@@ -20,7 +20,7 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-manifestation.shex",
         "dataLabel": "Get 100 items typed as manifestation from data.bnf.fr" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
-        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?work rdf:type frbr-rda:Manifestation\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?manifestation where {\r\n ?manifestation rdf:type frbr-rda:Manifestation\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
