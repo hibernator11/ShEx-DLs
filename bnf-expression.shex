@@ -4,6 +4,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX schema: <http://schema.org/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX marcrel: <http://id.loc.gov/vocabulary/relators/>
+PREFIX bnfroles: <http://data.bnf.fr/vocabulary/roles/>
 
 start = @<expression>
 <expression> {
