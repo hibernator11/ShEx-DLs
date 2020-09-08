@@ -1,18 +1,18 @@
 [   
     {
-        "schemaLabel": "BNF frbr-rda:Work",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work.shex",
-        "dataLabel": "Get 100 items typed as work from data.bnf.fr" ,
+        "schemaLabel": "BNF frbr-rda:Work (part 1)",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work1.shex",
+        "dataLabel": "Get 100 items typed as work from data.bnf.fr (part 1)" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?work rdf:type frbr-rda:Work\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
-        "schemaLabel": "BNB bibo:Book",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-book.shex",
-        "dataLabel": "Get all items typed as book from bnb.data.bl.uk" ,
-        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
-        "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?book where {\r\n ?book rdf:type bibo:Book\r\n}\r\n'''@START",
+        "schemaLabel": "BNF frbr-rda:Work (part 2)",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work2.shex",
+        "dataLabel": "Get 100 items typed as work from data.bnf.fr (part 2)" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?work rdf:type frbr-rda:Work\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
