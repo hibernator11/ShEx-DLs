@@ -1,0 +1,40 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX isbd: <http://iflastandards.info/ns/isbd/elements/>
+PREFIX rdam: <http://rdaregistry.info/Elements/m/>
+PREFIX rdau: <http://rdaregistry.info/Elements/u/>
+PREFIX rdaw: <http://rdaregistry.info/Elements/w/>
+PREFIX bnf-onto: <http://data.bnf.fr/ontology/bnf-onto/>
+PREFIX wemi: <http://rdvocab.info/RDARelationshipsWEMI/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX elements: <http://rdvocab.info/Elements/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+
+start = @<manifestation>
+<manifestation> {
+rdam:P30011 IRI* ;
+dct:description rdf:langString ;
+rdfs:seeAlso IRI;
+bnf-onto:FRBNF xsd:integer;
+rdam:P30176 rdf:langString ;
+rdam:P30135 IRI;
+rdarelationships:workManifested IRI;
+rdagroup1elements:note rdf:langString* ;
+rdau:P60470 rdf:langString ;
+dcterms:publisher xsd:string* ;
+bnf-onto:firstYear xsd:string* ;
+dcterms:title rdf:langString ;
+dcterms:subject IRI* ;
+rdarelationships:expressionManifested IRI ;
+rdagroup1elements:placeOfPublication xsd:string* ;
+rdagroup1elements:dateOfPublicationManifestation xsd:string* ;
+dcterms:date xsd:string* ;
+rdam:P30088 xsd:string* ;
+rdam:P30139 xsd:string* ;
+rdagroup1elements:publishersName xsd:string* ;
+}
