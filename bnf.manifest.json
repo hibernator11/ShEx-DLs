@@ -16,6 +16,14 @@
         "status": "conformant"
     },
     {
+        "schemaLabel": "BNF frbr-rda:Expression",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-expression.shex",
+        "dataLabel": "Get 100 items typed as expression from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?expression where {\r\n ?expression rdf:type frbr-rda:Expression\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
         "schemaLabel": "BNF frbr-rda:Manifestation",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-manifestation.shex",
         "dataLabel": "Get 100 items typed as manifestation from data.bnf.fr" ,
