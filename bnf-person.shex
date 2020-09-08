@@ -5,7 +5,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX schema: <http://schema.org/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX bio: <http://purl.org/vocab/bio/0.1/>
-PREFIX foaf: <http://xmlns.com/foaf/0.1>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdau: <http://rdaregistry.info/Elements/u/>
 PREFIX gr2: <http://rdvocab.info/ElementsGr2>
 PREFIX bnf-onto: <http://data.bnf.fr/ontology/bnf-onto/>
@@ -20,21 +20,26 @@ start = @<person>
  foaf:name xsd:string* ;
  foaf:gender xsd:string*;
  bio:event IRI* ;
- rdfs:seeAlso IRI;
+ rdfs:seeAlso IRI*;
+
 foaf:depiction IRI*;
 foaf:page IRI*;
-foaf:birthday xsd:string;
+foaf:birthday xsd:string*;
 gr2:languageOfThePerson xsd:string*;
 bio:birth xsd:string*;
 bio:death xsd:string*;
 foaf:gender xsd:string*;
 bnf-onto:mortPourLaFrance xsd:string*;
+rdaa:P50120 IRI*;
+rdaa:P50121 IRI*;
+foaf:gender xsd:string*;
+bnf-onto:mortPourLaFrance xsd:string*;
 rdaa:P50120 xsd:string*;
 rdaa:P50121 xsd:string*;
-gr2:dateOfBirth xsd:string*;
-gr2:dateOfDeath xsd:string*;
-rdaa:P50097 xsd:string*;
-rdaa:P50102 xsd:string*;
+gr2:dateOfBirth IRI*;
+gr2:dateOfDeath IRI*;
+rdaa:P50097 IRI*;
+rdaa:P50102 IRI*;
 rdaa:P50113 xsd:string*;
 gr2:biographicalInformation xsd:string*;
 gr2:countryAssociatedWithThePerson xsd:string*;
