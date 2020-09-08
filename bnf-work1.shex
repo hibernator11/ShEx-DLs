@@ -29,7 +29,6 @@ start = @<work>
  dct:created xsd:string ;
  dct:publisher xsd:string ;
  dct:frequency xsd:string ;
- bnf-onto:firstYear xsd:integer ;
  bnf-onto:lastYear xsd:string ;
  bnf-onto:subject xsd:string ;
  bnf-onto:translation IRI* ;
