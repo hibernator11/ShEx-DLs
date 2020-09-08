@@ -26,7 +26,7 @@ start = @<work>
  dct:creator  IRI* ;
  dct:contributor  IRI* ;
  dct:language  IRI* ;
- dct:description xsd:string ;
+ dct:description rdf:langString ;
  dct:created xsd:string ;
  dct:publisher xsd:string ;
  dct:frequency xsd:string ;
