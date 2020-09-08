@@ -64,10 +64,18 @@
         "status": "conformant"
     },    
     {
-        "schemaLabel": "BNB foaf:Person",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
-        "dataLabel": "Get all items typed as person from bnb.data.bl.uk" ,
-        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "schemaLabel": "BNF foaf:Person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-person.shex",
+        "dataLabel": "Get 100 items typed as person from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNF foaf:Person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-person.shex",
+        "dataLabel": "Get all items typed as person from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n'''@START",
         "status": "conformant"
     },
