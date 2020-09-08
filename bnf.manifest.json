@@ -1,6 +1,6 @@
 [   
     {
-        "schemaLabel": "BNB bibo:Book",
+        "schemaLabel": "BNF frbr-rda:Work",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work.shex",
         "dataLabel": "Get 100 items typed as book from bnb.data.bl.uk" ,
         "data": "Endpoint: https://bnf.data.fr/sparql",
