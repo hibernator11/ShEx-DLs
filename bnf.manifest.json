@@ -1,0 +1,138 @@
+[   
+    {
+        "schemaLabel": "BNB bibo:Book",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work.shex",
+        "dataLabel": "Get 100 items typed as book from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnf.data.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?book where {\r\n ?book rdf:type bibo:Book\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB bibo:Book",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-book.shex",
+        "dataLabel": "Get all items typed as book from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX bibo: <http://purl.org/ontology/bibo/>\r\n select ?book where {\r\n ?book rdf:type bibo:Book\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB foaf:Person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
+        "dataLabel": "Get 100 items typed as person from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB foaf:Person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
+        "dataLabel": "Get all items typed as person from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB foaf:Organization",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
+        "dataLabel": "Get 100 items typed as organization from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?organization where {\r\n ?organization rdf:type foaf:Organization\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB foaf:Organization",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-agent.shex",
+        "dataLabel": "Get all items typed as organization from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?organization where {\r\n ?organization rdf:type foaf:Organization\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB skos:Concept",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-concept.shex",
+        "dataLabel": "Get 100 items typed as skos:Concept from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\r\n select ?concept where {\r\n ?concept rdf:type skos:Concept\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB skos:Concept",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-concept.shex",
+        "dataLabel": "Get all items typed as skos:Concept from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\r\n select ?concept where {\r\n ?concept rdf:type skos:Concept\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB blterms:ProjectedPublicationEvent",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-publication.shex",
+        "dataLabel": "Get 100 items typed as blterms:ProjectedPublicationEvent from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>\r\n select ?pub where {\r\n ?pub rdf:type blterms:ProjectedPublicationEvent\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB blterms:ProjectedPublicationEvent",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-publication.shex",
+        "dataLabel": "Get all items typed as blterms:ProjectedPublicationEvent from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>\r\n select ?pub where {\r\n ?pub rdf:type blterms:ProjectedPublicationEvent\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB blterms:PublicationEvent",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-publication.shex",
+        "dataLabel": "Get 100 items typed as blterms:PublicationEvent from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>\r\n select ?pub where {\r\n ?pub rdf:type blterms:PublicationEvent\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNB blterms:PublicationEvent",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-publication.shex",
+        "dataLabel": "Get all items typed as blterms:PublicationEvent from bnb.data.bl.uk" ,
+        "data": "Endpoint: https://bnb.data.bl.uk/sparql",
+        "queryMap": "SPARQL '''PREFIX blterms: <http://www.bl.uk/schemas/bibliographic/blterms#>\r\n select ?pub where {\r\n ?pub rdf:type blterms:PublicationEvent\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "Wikidata human class",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/wikidata-human.shex",
+        "dataLabel": "Get 20 items with typed as human and linked to BNB" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P5361 ?bnblink \r\n}\r\nlimit 20'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "Wikidata human class",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/wikidata-human.shex",
+        "dataLabel": "Get all items with typed as human and linked to BNB" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P5361 ?bnblink \r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "Wikidata organization class derived from PM20 ID",
+        "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-organization.shex",
+        "dataLabel": "Get 20 items with PM20 ids starting with 'co/'" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n  ?item wdt:P4293 ?pm20Id .\r\n  filter(regex(?pm20Id, '^co\/'))\r\n}\r\nlimit 20'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "Wikidata organization class derived from PM20 ID",
+        "schemaURL": "https://raw.githubusercontent.com/jneubert/wd-shex-test/master/wikidata-organization.shex",
+        "dataLabel": "Get all items with PM20 ids starting with 'co/'" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n  ?item wdt:P4293 ?pm20Id .\r\n  filter(regex(?pm20Id, '^co\/'))\r\n}\r\nlimit 20'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNE person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bne-person.shex",
+        "dataLabel": "Get 20 items typed as person from datos.bne.es" ,
+        "data": "Endpoint: http://datos.bne.es/sparql",
+        "queryMap": "SPARQL '''select ?item where {\r\n ?item rdf:type ns2:C1005\r\n}\r\n limit 20'''@START",
+        "status": "conformant"
+    }
+]
