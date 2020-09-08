@@ -16,15 +16,12 @@ PREFIX elements: <http://rdvocab.info/Elements/>
 PREFIX mo: <http://purl.org/ontology/mo/>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
 
-
-
-
 start = @<work>
 <work> {
  rdfs:label  xsd:string ;
  owl:sameAs IRI* ;
- dct:title xsd:string ;
- dct:date xsd:string ;
+ dct:title rdf:langString ;
+ dct:date xsd:date ;
  dct:subject  IRI* ;
  dct:creator  IRI* ;
  dct:contributor  IRI* ;
@@ -33,7 +30,7 @@ start = @<work>
  dct:created xsd:string ;
  dct:publisher xsd:string ;
  dct:frequency xsd:string ;
- bnf-onto:firstYear xsd:string ;
+ bnf-onto:firstYear xsd:integer ;
  bnf-onto:lastYear xsd:string ;
  bnf-onto:subject xsd:string ;
  bnf-onto:translation IRI* ;
@@ -56,7 +53,7 @@ start = @<work>
  elements:publisherName xsd:string ;
  elements:note xsd:string ;
  elements:numberingOfIssue xsd:string ;
- schema:location  xsd:string ;
+ schema:location rdf:langString ;
  rdau:P61160 xsd:string ;
  rdau:P60470 xsd:string ;
  rdaw:P10004 xsd:string ; 
