@@ -21,7 +21,6 @@ start = @<work>
  rdfs:label  xsd:string ;
  owl:sameAs IRI* ;
  dct:title rdf:langString ;
- dct:date xsd:date ;
  dct:subject  IRI* ;
  dct:creator  IRI* ;
  dct:contributor  IRI* ;
