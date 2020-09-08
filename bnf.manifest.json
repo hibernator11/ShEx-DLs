@@ -2,8 +2,8 @@
     {
         "schemaLabel": "BNF frbr-rda:Work",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work.shex",
-        "dataLabel": "Get 100 items typed as work from bnf.data.fr" ,
-        "data": "Endpoint: https://bnf.data.fr/sparql",
+        "dataLabel": "Get 100 items typed as work from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?book rdf:type frbr-rda:Work\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
