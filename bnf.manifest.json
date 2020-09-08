@@ -105,7 +105,7 @@
     },
     {
         "schemaLabel": "Wikidata human class",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/wikidata-human.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-wikidata-human.shex",
         "dataLabel": "Get all items with typed as human and linked to BNB" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P5361 ?bnblink \r\n}\r\n'''@START",
