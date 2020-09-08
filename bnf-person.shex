@@ -20,7 +20,7 @@ start = @<person>
  foaf:name xsd:string* ;
  foaf:gender xsd:string*;
  bio:event IRI* ;
- rdfs:seeAlso IRI;
+ rdfs:seeAlso IRI*;
 foaf:depiction IRI*;
 foaf:page IRI*;
 foaf:birthday xsd:string*;
