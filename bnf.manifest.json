@@ -1,7 +1,7 @@
 [   
     {
         "schemaLabel": "BNF frbr-rda:Work (part 1)",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work1.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-work1.shex",
         "dataLabel": "Get 100 items typed as work from data.bnf.fr (part 1)" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?work rdf:type frbr-rda:Work\r\n}\r\n limit 100'''@START",
@@ -9,7 +9,7 @@
     },
     {
         "schemaLabel": "BNF frbr-rda:Work (part 1)",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work1.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-work1.shex",
         "dataLabel": "Get all items typed as work from data.bnf.fr (part 1)" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?work rdf:type frbr-rda:Work\r\n}'''@START",
@@ -17,7 +17,7 @@
     },
     {
         "schemaLabel": "BNF frbr-rda:Work (part 2)",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work2.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-work2.shex",
         "dataLabel": "Get 100 items typed as work from data.bnf.fr (part 2)" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?work rdf:type frbr-rda:Work\r\n}\r\n limit 100'''@START",
@@ -25,7 +25,7 @@
     },
     {
         "schemaLabel": "BNF frbr-rda:Work (part 2)",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-work2.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-work2.shex",
         "dataLabel": "Get all items typed as work from data.bnf.fr (part 2)" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?work where {\r\n ?work rdf:type frbr-rda:Work\r\n}'''@START",
@@ -33,7 +33,7 @@
     },
     {
         "schemaLabel": "BNF frbr-rda:Expression",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-expression.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-expression.shex",
         "dataLabel": "Get 100 items typed as expression from data.bnf.fr" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?expression where {\r\n ?expression rdf:type frbr-rda:Expression\r\n}\r\n limit 100'''@START",
@@ -41,7 +41,7 @@
     },
     {
         "schemaLabel": "BNF frbr-rda:Expression",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-expression.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-expression.shex",
         "dataLabel": "Get all items typed as expression from data.bnf.fr" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?expression where {\r\n ?expression rdf:type frbr-rda:Expression\r\n}'''@START",
@@ -49,7 +49,7 @@
     },
     {
         "schemaLabel": "BNF frbr-rda:Manifestation",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-manifestation.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-manifestation.shex",
         "dataLabel": "Get 100 items typed as manifestation from data.bnf.fr" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?manifestation where {\r\n ?manifestation rdf:type frbr-rda:Manifestation\r\n}\r\n limit 100'''@START",
@@ -57,7 +57,7 @@
     },
     {
         "schemaLabel": "BNF frbr-rda:Manifestation",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-manifestation.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-manifestation.shex",
         "dataLabel": "Get all items typed as manifestation from data.bnf.fr" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?manifestation where {\r\n ?manifestation rdf:type frbr-rda:Manifestation\r\n}'''@START",
@@ -65,7 +65,7 @@
     },    
     {
         "schemaLabel": "BNF foaf:Person",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-person.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-person.shex",
         "dataLabel": "Get 100 items typed as person from data.bnf.fr" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n limit 100'''@START",
@@ -73,7 +73,7 @@
     },
     {
         "schemaLabel": "BNF foaf:Person",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf-person.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-person.shex",
         "dataLabel": "Get all items typed as person from data.bnf.fr" ,
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?person where {\r\n ?person rdf:type foaf:Person\r\n}\r\n'''@START",
@@ -117,14 +117,6 @@
         "dataLabel": "Get all items with PM20 ids starting with 'co/'" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''select ?item where {\r\n  ?item wdt:P4293 ?pm20Id .\r\n  filter(regex(?pm20Id, '^co\/'))\r\n}\r\nlimit 20'''@START",
-        "status": "conformant"
-    },
-    {
-        "schemaLabel": "BNE person",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bne-person.shex",
-        "dataLabel": "Get 20 items typed as person from datos.bne.es" ,
-        "data": "Endpoint: http://datos.bne.es/sparql",
-        "queryMap": "SPARQL '''select ?item where {\r\n ?item rdf:type ns2:C1005\r\n}\r\n limit 20'''@START",
         "status": "conformant"
     }
 ]
