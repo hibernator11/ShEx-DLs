@@ -1,0 +1,13 @@
+# Shape expression for checking an item is an instance
+# of human class (or of some subclass)
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+start = @<wikidata-human>
+
+<wikidata-human> {
+  (
+    (wdt:P31 [wd:Q5];) 
+  )
+}
