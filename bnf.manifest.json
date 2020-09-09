@@ -130,7 +130,7 @@
     },
     {
         "schemaLabel": "Wikidata human class",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnF-wikidata-human.shex",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-wikidata-human.shex",
         "dataLabel": "Get 20 items with typed as human and linked to BnF" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P268 ?bnflink \r\n}\r\nlimit 20'''@START",
