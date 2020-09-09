@@ -95,6 +95,23 @@
         "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?org where {\r\n ?org rdf:type foaf:Organization\r\n}\r\n'''@START",
         "status": "conformant"
     },
+
+    {
+        "schemaLabel": "BNF skos:Concept",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-concept.shex",
+        "dataLabel": "Get 100 items typed as concept from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#> \r\n select ?concept where {\r\n ?concept rdf:type skos:Concept\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNF skos:Concept",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-concept.shex",
+        "dataLabel": "Get all items typed as concept from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#> \r\n select ?concept where {\r\n ?concept rdf:type skos:Concept\r\n}\r\n'''@START",
+        "status": "conformant"
+    },    
     {
         "schemaLabel": "Wikidata human class",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-wikidata-human.shex",
