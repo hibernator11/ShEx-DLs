@@ -111,7 +111,23 @@
         "data": "Endpoint: https://data.bnf.fr/sparql",
         "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#> \r\n select ?concept where {\r\n ?concept rdf:type skos:Concept\r\n}\r\n'''@START",
         "status": "conformant"
-    },    
+    }, 
+    {
+        "schemaLabel": "BNF geo:SpatialThing",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-place.shex",
+        "dataLabel": "Get 100 items typed as spatialthing from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> \r\n select ?place where {\r\n ?place rdf:type geo:SpatialThing\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "BNF geo:SpatialThing",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-place.shex",
+        "dataLabel": "Get all items typed as spatialthing from data.bnf.fr" ,
+        "data": "Endpoint: https://data.bnf.fr/sparql",
+        "queryMap": "SPARQL '''PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> \r\n select ?place where {\r\n ?place rdf:type geo:SpatialThing\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
     {
         "schemaLabel": "Wikidata human class",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-wikidata-human.shex",
