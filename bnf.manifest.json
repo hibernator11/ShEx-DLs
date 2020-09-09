@@ -130,18 +130,18 @@
     },
     {
         "schemaLabel": "Wikidata human class",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-wikidata-human.shex",
-        "dataLabel": "Get 20 items with typed as human and linked to BNB" ,
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnF-wikidata-human.shex",
+        "dataLabel": "Get 20 items with typed as human and linked to BnF" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P5361 ?bnblink \r\n}\r\nlimit 20'''@START",
         "status": "conformant"
     },
     {
         "schemaLabel": "Wikidata human class",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb-wikidata-human.shex",
-        "dataLabel": "Get all items with typed as human and linked to BNB" ,
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnf/bnf-wikidata-human.shex",
+        "dataLabel": "Get all items with typed as human and linked to BnF" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P5361 ?bnblink \r\n}\r\n'''@START",
+        "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P268 ?bnblink \r\n}\r\n'''@START",
         "status": "conformant"
     },
     {
