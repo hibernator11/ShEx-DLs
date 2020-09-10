@@ -1,3 +1,9 @@
+
+
+[![DOI](https://zenodo.org/badge/289058534.svg)](https://zenodo.org/badge/latestdoi/289058534)
+
+
+
 # ShEx-DLs
 Shape Expressions for evaluating quality in LOD respositories published by digital libraries
 
