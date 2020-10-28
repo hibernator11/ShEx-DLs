@@ -110,5 +110,5 @@
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''select ?item where {\r\n ?item wdt:P5361 ?bnblink \r\n}\r\n'''@START",
         "status": "conformant"
-    },
+    }
 ]
