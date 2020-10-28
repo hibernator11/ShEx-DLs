@@ -25,11 +25,10 @@ start = @<work>
  dct:creator  IRI* ;
  dct:contributor  IRI* ;
  dct:language  IRI* ;
- dct:description rdf:langString ;
+ dct:description rdf:langString* ;
  dct:created xsd:string* ;
  dct:publisher xsd:string* ;
  dct:frequency xsd:string* ;
- bnf-onto:lastYear xsd:string* ;
  bnf-onto:subject IRI* ;
  bnf-onto:translation IRI* ;
  bnf-onto:electronicEdition IRI* ;
