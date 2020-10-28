@@ -27,15 +27,14 @@ start = @<work>
  elements:publisherName xsd:string* ;
  elements:note xsd:string* ;
  elements:numberingOfIssue xsd:string* ;
- schema:location rdf:langString ;
- rdau:P61160 xsd:string* ;
- rdau:P60470 xsd:string* ;
- rdaw:P10004 xsd:string* ; 
- rdaw:P10219 xsd:string* ; 
- rdaw:P10078 xsd:string* ; 
- rdaw:P10218 xsd:string* ; 
-elements:dateOfWork xsd:string* ;
- elements:formOfWork xsd:string* ;
- elements:statusOfIdentification xsd:string* ;
- mo:genre xsd:string* ; 
+ rdau:P61160 IRI* ;
+ rdau:P60470 IRI* ;
+ rdaw:P10004 IRI* ; 
+ rdaw:P10219 IRI* ; 
+ rdaw:P10078 IRI* ; 
+ rdaw:P10218 IRI* ; 
+ elements:dateOfWork IRI* ;
+ elements:formOfWork IRI* ;
+ elements:statusOfIdentification rdf:langString* ;
+ mo:genre xsd:string* ;  
  }
