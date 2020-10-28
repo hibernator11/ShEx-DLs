@@ -20,7 +20,7 @@ start = @<manifestation>
 rdam:P30011 IRI* ;
 dcterms:description xsd:string;
 rdfs:seeAlso IRI;
-rdam:P30176 xsd:string ;
+rdam:P30176 xsd:string* ;
 rdam:P30135 IRI;
 rdarelationships:workManifested IRI;
 rdagroup1elements:note xsd:string* ;
