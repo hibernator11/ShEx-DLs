@@ -1,0 +1,54 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdau: <http://rdaregistry.info/Elements/u/>
+PREFIX gr2: <http://rdvocab.info/ElementsGr2>
+PREFIX bnf-onto: <http://data.bnf.fr/ontology/bnf-onto/>
+PREFIX rdaa: <http://rdaregistry.info/Elements/a/>
+
+start = @<person>
+<person> {
+ rdfs:label  xsd:string* ;
+ owl:sameAs IRI* ;
+ foaf:givenName xsd:string* ;
+ foaf:familyName xsd:string* ;
+ foaf:name xsd:string* ;
+ foaf:gender xsd:string*;
+ bio:event IRI* ;
+ rdfs:seeAlso IRI*;
+foaf:depiction IRI*;
+foaf:page IRI*;
+foaf:birthday xsd:string*;
+gr2:languageOfThePerson xsd:string*;
+bio:birth IRI*;
+bio:death IRI*;
+foaf:gender xsd:string*;
+bnf-onto:mortPourLaFrance xsd:string*;
+rdaa:P50120 IRI*;
+rdaa:P50121 IRI*;
+gr2:dateOfBirth IRI*;
+gr2:dateOfDeath IRI*;
+rdaa:P50097 IRI*;
+rdaa:P50102 IRI*;
+rdaa:P50113 xsd:string*;
+gr2:biographicalInformation xsd:string*;
+gr2:countryAssociatedWithThePerson IRI*;
+rdaa:P50100 xsd:string*;
+gr2:fieldOfActivityOfThePerson xsd:string*;
+rdaa:P50118 xsd:string*;
+rdaa:P50119 xsd:string*;
+gr2:placeOfBirth xsd:string*;
+gr2:placeOfDeath xsd:string*;
+foaf:homepage xsd:string*;
+rdaa:P50098 xsd:string*;
+gr2:periodOfActivityOfThePerson xsd:string*;
+}
+
+
+
+
