@@ -5,7 +5,7 @@
 
 
 # ShEx-DLs
-Shape Expressions for evaluating quality in LOD respositories published by digital libraries
+Shape Expressions for evaluating data quality in LOD published by libraries
 
 
 [ShEx validation tool British National Bibliography Linked Data platform](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bnb.manifest.json)
@@ -14,3 +14,4 @@ Shape Expressions for evaluating quality in LOD respositories published by digit
 
 [ShEx validation tool datos.bne.es](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/bne.manifest.json)
 
+[ShEx validation tool Linked Open Vocabularies (LOV)](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov.manifest.json)
