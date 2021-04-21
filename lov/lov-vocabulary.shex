@@ -18,12 +18,12 @@ vann:preferredNamespacePrefix xsd:string;
 vann:preferredNamespaceUri xsd:string*;
 foaf:homePage IRI*;
 dct:contributor IRI*;
-dct:issued xsd:date*; da error
+  dct:issued xsd:date*;
 dct:publlisher IRI*;
 dct:title xsd:string;
 dct:description rdf:langString*;
 dct:publlisher IRI*;
-rev:hasReview xsd:string; no lo reconoce
+  rev:hasReview xsd:string;
 dcat:distribution IRI*;
 dcat:keyword xsd:string;
 dct:creator IRI*;
