@@ -9,7 +9,7 @@ start = @<work>
 schema:name xsd:string+ ;
 schema:isPartOf IRI+ ;
 rdau:P60049 IRI* ;
-schema:author IRI ;
+schema:author IRI* ;
 schema:workExample IRI* ;
 schema:inLanguage xsd:string+ ;
 schema:about IRI* ;
