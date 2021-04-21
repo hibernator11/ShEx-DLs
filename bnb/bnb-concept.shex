@@ -6,5 +6,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 start = @<concept>
 <concept> {
- rdfs:label  xsd:string* ;
+ rdfs:label  xsd:string+ ;
  }
