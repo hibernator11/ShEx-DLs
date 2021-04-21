@@ -1,18 +1,26 @@
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <http://schema.org/>
 PREFIX rdau: <http://rdaregistry.info/Elements/u/>
-PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-start = @<concept>
-<concept> { 
-  skos:broader IRI*;
-  dct:created xsd:string*;
-  rdfs:seeAlso IRI*;
-  rdau:P61160 IRI*;
-  skos:prefLabel rdf:langString*; 
+
+start = @<book>
+<book> {
+ rdf:type IRI+;
+schema:name xsd:string ;
+schema:description xsd:string* ;
+schema:isPartOf IRI+ ;
+schema:exampleOfWork IRI* ;
+schema:bookFormat IRI* ;
+schema:url IRI? ;
+schema:issn xsd:string* ;
+schema:sameAs IRI* ;
+rdau:P60048 IRI? ;
+rdau:P60050 IRI? ;
+schema:identifier IRI? ;
+schema:publication IRI? ;
+schema:publisher IRI* ;
+schema:datePublished xsd:string? ;
+schema:isbn xsd:string* ;
+schema:numberOfPages IRI? ;
 }
-
-
