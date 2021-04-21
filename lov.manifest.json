@@ -109,7 +109,7 @@
         "dataLabel": "Get all items typed as review from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
         "queryMap": "SPARQL '''PREFIX 'rev:<http://purl.org/stuff/rev>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?r where {\r\n ?r rdf:type rev:Review\r\n}\r\n'''@START",
-        "status": "conformant"
+        "status": "conformant" 
     },
     {
         "schemaLabel": "LOV voaf:DatasetOccurrences",
