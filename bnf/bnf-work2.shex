@@ -18,23 +18,23 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 
 start = @<work>
 <work> {
- foaf:page IRI* ;
+ foaf:page IRI? ;
  foaf:depiction IRI* ;
- foaf:homepage IRI* ;
- elements:placeOfProduction IRI* ;
- elements:placeOfPublication IRI* ;
- elements:placeOfOriginOfTheWork IRI* ;
- elements:publisherName xsd:string* ;
+ foaf:homepage IRI? ;
+ elements:placeOfProduction IRI? ;
+ elements:placeOfPublication IRI? ;
+ elements:placeOfOriginOfTheWork IRI? ;
+ elements:publisherName xsd:string? ;
  elements:note xsd:string* ;
- elements:numberingOfIssue xsd:string* ;
- rdau:P61160 IRI* ;
+ elements:numberingOfIssue xsd:string? ;
+ rdau:P61160 IRI ;
  rdau:P60470 IRI* ;
- rdaw:P10004 IRI* ; 
- rdaw:P10219 IRI* ; 
- rdaw:P10078 IRI* ; 
- rdaw:P10218 IRI* ; 
- elements:dateOfWork IRI* ;
- elements:formOfWork IRI* ;
- elements:statusOfIdentification rdf:langString* ;
- mo:genre xsd:string* ;  
+ rdaw:P10004 IRI ; 
+ rdaw:P10219 IRI ; 
+ rdaw:P10078 IRI+ ; 
+ rdaw:P10218 IRI? ; 
+ elements:dateOfWork IRI ;
+ elements:formOfWork IRI ;
+ elements:statusOfIdentification rdf:langString+ ;
+ mo:genre xsd:string? ;  
  }
