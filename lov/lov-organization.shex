@@ -1,21 +1,14 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX rdagroup2elements: <http://rdvocab.info/ElementsGr2>
-PREFIX rdaa: <http://rdaregistry.info/Elements/a/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX vann:<http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX voaf:<http://purl.org/vocommons/voaf#>
+
 
 start = @<organization>
-<organization> { 
-  rdaa:P50035 rdf:langString*;
-  foaf:name rdf:langString*;
-  foaf:page IRI*;
-  foaf:homepage IRI*;
-  owl:sameAs IRI*;
-  rdagroup2elements:dateOfEstablishment IRI*;
-  rdagroup2elements:corporateHistory rdf:langString*;
-  rdaa:P50037 IRI*;
-  rdaa:P50031 IRI*;
-  rdagroup2elements:placeAssociatedWithTheCorporateBody IRI*;
+<organization> {
+ rdf:type  IRI+ ;
+ foaf:name xsd:string *;
+owl:sameAs IRI*;
 }
