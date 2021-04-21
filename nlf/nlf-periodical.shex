@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdau: <http://rdaregistry.info/Elements/u/>
+
+start = @<periodical>
+<periodical> {
+ rdf:type IRI*;
+schema:name xsd:string+ ;
+schema:description xsd:string* ;
+schema:isPartOf IRI+ ;
+schema:WorkExample IRI* ;
+schema:exampleOfWork IRI* ;
+schema:traslationOfWork IRI* ;
+schema:WorkTraslation IRI* ;
+schema:inLanguage xsd:string+ ;
+schema:bookFormat IRI* ;
+schema:url IRI? ;
+schema:issn xsd:string* ;
+schema:sameAs IRI+ ;
+rdau:P60048 IRI? ;
+rdau:P60049 IRI* ;
+rdau:P60050 IRI? ;
+schema:identifier xsd:string* ;
+schema:publication xsd:string? ;
+schema:publisher IRI* ;
+schema:author IRI* ;
+schema:contributor IRI* ;
+schema:datePublished xsd:string* ;
+schema:isbn xsd:string* ;
+schema:numberOfPages IRI? ;
+}
