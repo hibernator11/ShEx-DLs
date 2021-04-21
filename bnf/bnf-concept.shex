@@ -9,10 +9,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 start = @<concept>
 <concept> { 
   skos:broader IRI*;
-  dct:created xsd:string*;
-  rdfs:seeAlso IRI*;
+  dct:created xsd:string+;
+  rdfs:seeAlso IRI+;
   rdau:P61160 IRI*;
-  skos:prefLabel rdf:langString*; 
+  skos:prefLabel rdf:langString+; 
 }
 
 
