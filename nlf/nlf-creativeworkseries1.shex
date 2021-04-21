@@ -1,0 +1,24 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdau: <http://rdaregistry.info/Elements/u/>
+
+start = @<creativeworkseries>
+<creativeworkseries> {
+ rdf:type IRI*;
+schema:name xsd:string+ ;
+schema:description xsd:string* ;
+schema:about IRI* ;
+schema:url IRI? ;
+schema:isPartOf IRI+ ;
+schema:issn xsd:string* ;
+schema:contributor IRI* ;
+schema:traslationOfWork IRI* ;
+schema:WorkTraslation IRI* ;
+schema:inLanguage xsd:string+ ;
+schema:WorkExample IRI* ;
+schema:sameAs IRI* ;
+rdau:P60048 IRI? ;
+rdau:P60049 IRI* ;
+schema:author IRI* ;
+}
