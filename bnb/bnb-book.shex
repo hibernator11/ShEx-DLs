@@ -28,7 +28,7 @@ start = @<book>
  schema:identifier IRI ;
  schema:datePublished xsd:string ;
  schema:name xsd:string ;
- schema:author IRI ;
+ schema:author IRI* ;
  schema:contributor IRI* ;
  blterms:projectedPublication IRI? ;
  blterms:publication IRI* ;
