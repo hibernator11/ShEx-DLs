@@ -8,7 +8,7 @@ PREFIX c4dm: <http://purl.org/NET/c4dm/event.owl#>
 start = @<projectedpublicationevent>
 <projectedpublicationevent> {
  rdfs:label  xsd:string ;
- c4dm:agent IRI* ;
- c4dm:place IRI* ;
+ c4dm:agent IRI ;
+ c4dm:place IRI+ ;
  c4dm:time IRI* ;
 }
