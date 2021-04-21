@@ -98,15 +98,15 @@
     {
         "schemaLabel": "LOV voaf:DatasetOccurrences",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-datasetocurrences.shex",
-        "dataLabel": "Get 100 items typed as datasetoccurrences from Linked Open Data vocabularies" ,
+        "dataLabel": "Get 100 items typed as datasetocurrences from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
         "queryMap": "SPARQL '''PREFIX voaf:<http://purl.org/vocommons/voaf#> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?d where {\r\n ?d rdf:type voaf:DatasetOccurrences\r\n}\r\n  limit 100'''@START",
         "status": "conformant"
     },
     {
-        "schemaLabel": "LOV voaf:DatasetOccurrences",
+        "schemaLabel": "LOV voaf:DatasetOcurrences",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-datasetocurrences.shex",
-        "dataLabel": "Get all items typed as datasetoccurrences from Linked Open Data vocabularies" ,
+        "dataLabel": "Get all items typed as datasetocurrences from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
         "queryMap": "SPARQL '''PREFIX voaf:<http://purl.org/vocommons/voaf#/> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?d where {\r\n ?d rdf:type voaf:DatasetOccurrences\r\n}\r\n'''@START",
         "status": "conformant"
