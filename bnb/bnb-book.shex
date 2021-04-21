@@ -16,8 +16,8 @@ start = @<book>
  rdfs:label  xsd:string ;
  dct:title xsd:string ;
  blterms:bnb xsd:string ;
- dct:language IRI* ;
- dct:subject  IRI* ;
+ dct:language IRI+ ;
+ dct:subject  IRI+ ;
  dct:alternative xsd:string* ;
  dct:description rdf:langString* ;
  dct:abstract rdf:langString* ;
@@ -25,18 +25,18 @@ start = @<book>
  bibo:isbn13 xsd:string* ;
  bibo:isbn10 xsd:string* ;
  schema:isbn xsd:string* ;
- schema:identifier IRI+ ;
+ schema:identifier IRI ;
  schema:datePublished xsd:string ;
  schema:name xsd:string ;
- schema:author IRI* ;
+ schema:author IRI ;
  schema:contributor IRI* ;
- blterms:projectedPublication IRI* ;
+ blterms:projectedPublication IRI? ;
  blterms:publication IRI* ;
  owl:sameAs IRI* ;
  isbd:P1053 rdf:langString* ;
  isbd:P1042 rdf:langString* ;
  isbd:P1073 rdf:langString* ;
- rdau:P60048 IRI* ;
+ rdau:P60048 IRI? ;
  rdau:P60049 IRI* ;
- rdau:P60050 IRI* ;
+ rdau:P60050 IRI? ;
 }
