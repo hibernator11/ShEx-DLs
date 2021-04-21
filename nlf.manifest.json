@@ -1,20 +1,164 @@
 [   
     {
-        "schemaLabel": "NLF frbr-rda:Manifestation",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-manifestation.shex",
-        "dataLabel": "Get 100 items typed as manifestation from the National Library of Finland" ,
+        "schemaLabel": "NLF schema:PublicationEvent",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-publicationevent.shex",
+        "dataLabel": "Get 100 items typed as publicationevent from the National Library of Finland" ,
         "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
-        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?manifestation where {\r\n ?manifestation rdf:type frbr-rda:Manifestation\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?pe where {\r\n ?pe rdf:type schema:PublicationEvent\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
-        "schemaLabel": "NLF frbr-rda:Manifestation",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-manifestation.shex",
-        "dataLabel": "Get all items typed as manifestation from the National Library of Finland" ,
+        "schemaLabel": "NLF schema:PublicationEvent",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-publicationevent.shex",
+        "dataLabel": "Get all items typed as publicationevent from the National Library of Finland" ,
         "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
-        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?manifestation where {\r\n ?manifestation rdf:type frbr-rda:Manifestation\r\n}'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?manifestation where {\r\n ?manifestation rdf:type schema:PublicationEvent\r\n}'''@START",
         "status": "conformant"
     },    
+    {
+        "schemaLabel": "NLF schema:CreativeWork1",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativework1.shex",
+        "dataLabel": "Get 100 items typed as creativework from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWork\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:CreativeWork1",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativework1.shex",
+        "dataLabel": "Get all items typed as creativework from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWork\r\n}'''@START",
+        "status": "conformant"
+    },  
+    {
+        "schemaLabel": "NLF schema:CreativeWork2",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativework2.shex",
+        "dataLabel": "Get 100 items typed as creativework from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWork\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:CreativeWork2",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativework2.shex",
+        "dataLabel": "Get all items typed as creativework from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWork\r\n}'''@START",
+        "status": "conformant"
+    }, 
+    {
+        "schemaLabel": "NLF loc:Work",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-work.shex",
+        "dataLabel": "Get 100 items typed as work from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n PREFIX loc: <http://id.loc.gov/ontologies/bibframe/> \r\n select ?w where {\r\n ?w rdf:type loc:Work\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF loc:Work",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-work.shex",
+        "dataLabel": "Get all items typed as work from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n PREFIX loc: <http://id.loc.gov/ontologies/bibframe/> \r\n select ?w where {\r\n ?w rdf:type loc:Work\r\n}'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:Place",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-place.shex",
+        "dataLabel": "Get 100 items typed as place from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?p where {\r\n ?p rdf:type schema:Place\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:Place",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-place.shex",
+        "dataLabel": "Get all items typed as place from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?p where {\r\n ?p rdf:type schema:Place\r\n}'''@START",
+        "status": "conformant"
+    }, 
+    {
+        "schemaLabel": "NLF schema:CreativeWorkSeries1",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativeworkseries1.shex",
+        "dataLabel": "Get 100 items typed as CreativeWorkSeries from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWorkSeries\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:CreativeWorkSeries1",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativeworkseries1.shex",
+        "dataLabel": "Get all items typed as CreativeWorkSeries from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWorkSeries\r\n}'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:CreativeWorkSeries2",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativeworkseries2.shex",
+        "dataLabel": "Get 100 items typed as CreativeWorkSeries from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWorkSeries\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:CreativeWorkSeries2",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativeworkseries2.shex",
+        "dataLabel": "Get all items typed as CreativeWorkSeries from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cw where {\r\n ?cw rdf:type schema:CreativeWorkSeries\r\n}'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:Book",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-book.shex",
+        "dataLabel": "Get 100 items typed as book from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?b where {\r\n ?b rdf:type schema:Book\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:Book",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-creativeworkseries2.shex",
+        "dataLabel": "Get all items typed as book from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?b where {\r\n ?b rdf:type schema:Book\r\n}'''@START",
+        "status": "conformant"
+    },
+      {
+        "schemaLabel": "NLF schema:Periodical",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-periodical.shex",
+        "dataLabel": "Get 100 items typed as periodical from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?p where {\r\n ?p rdf:type schema:Periodical\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:Periodical",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-periodical.shex",
+        "dataLabel": "Get all items typed as periodical from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?p where {\r\n ?p rdf:type schema:Periodical\r\n}'''@START",
+        "status": "conformant"
+    },
+     {
+        "schemaLabel": "NLF schema:Collection",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-collection.shex",
+        "dataLabel": "Get 100 items typed as collection from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?c where {\r\n ?c rdf:type schema:Collection\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:Collection",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-collection.shex",
+        "dataLabel": "Get all items typed as collection from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?c where {\r\n ?c rdf:type schema:Collection\r\n}'''@START",
+        "status": "conformant"
+    },
     {
         "schemaLabel": "NLF foaf:Person",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-person.shex",
@@ -22,7 +166,7 @@
         "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
         "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?person where {\r\n ?person rdf:type schema:Person\r\n}\r\n limit 100'''@START",
         "status": "conformant"
-    },
+    },    
     {
         "schemaLabel": "NLF foaf:Person",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-person.shex",
@@ -32,19 +176,19 @@
         "status": "conformant"
     },
     {
-        "schemaLabel": "NLF foaf:Organization",
+        "schemaLabel": "NLF schema:Organization",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-organization.shex",
         "dataLabel": "Get 100 items typed as organization from the National Library of Finland" ,
         "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
-        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?org where {\r\n ?org rdf:type foaf:Organization\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?org where {\r\n ?org rdf:type schema:Organization\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
-        "schemaLabel": "NLF foaf:Organization",
+        "schemaLabel": "NLF schema:Organization",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-organization.shex",
         "dataLabel": "Get all items typed as organization from the National Library of Finland" ,
         "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
-        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?org where {\r\n ?org rdf:type foaf:Organization\r\n}\r\n'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?org where {\r\n ?org rdf:type schema:Organization\r\n}\r\n'''@START",
         "status": "conformant"
     },
 
