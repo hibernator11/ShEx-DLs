@@ -78,7 +78,7 @@
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
         "queryMap": "SPARQL '''PREFIX dcat:<http://www.w3.org/ns/dcat#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cr where {\r\n ?cr rdf:type dcat:CatalogRecord\r\n}\r\n'''@START",
         "status": "conformant"
-    }
+    },
     {
         "schemaLabel": "LOV lexvo:Language",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-language.shex",
@@ -94,7 +94,7 @@
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
         "queryMap": "SPARQL '''PREFIX lexvo:<http://lexvo.org/ontology#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?l where {\r\n ?l rdf:type lexvo:Language\r\n}\r\n'''@START",
         "status": "conformant"
-    }
+    },
     {
         "schemaLabel": "LOV rev:Review",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-review.shex",
@@ -110,7 +110,7 @@
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
         "queryMap": "SPARQL '''PREFIX 'rev:<http://purl.org/stuff/rev>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?r where {\r\n ?r rdf:type rev:Review\r\n}\r\n'''@START",
         "status": "conformant"
-    }
+    },
     {
         "schemaLabel": "LOV voaf:DatasetOccurrences",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-datasetoccurrences.shex",
