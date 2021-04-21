@@ -9,8 +9,8 @@ PREFIX bnfroles: <http://data.bnf.fr/vocabulary/roles/>
 
 start = @<expression>
 <expression> {
-dcterms:contributor IRI* ;
-dcterms:language IRI* ;
+dcterms:contributor IRI+ ;
+dcterms:language IRI+ ;
 owl:sameAs IRI* ;
 marcrel:aut IRI* ;
 bnfroles:r70 IRI* ;
