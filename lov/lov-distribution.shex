@@ -10,7 +10,6 @@ PREFIX owl:<http://www.w3.org/2002/07/owl#>
 start = @<distribution>
 <distribution> {
 owl:imports IRI*;
-dct:issued xsd:date?;
 dct:title xsd:string+;
 dct:language IRI*;
 voaf:generalizes IRI?;
