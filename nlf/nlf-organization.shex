@@ -1,21 +1,32 @@
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX rdagroup2elements: <http://rdvocab.info/ElementsGr2>
 PREFIX rdaa: <http://rdaregistry.info/Elements/a/>
+prefix schema: <http://schema.org/>
+
 
 start = @<organization>
-<organization> { 
-  rdaa:P50035 rdf:langString*;
-  foaf:name rdf:langString*;
-  foaf:page IRI*;
-  foaf:homepage IRI*;
-  owl:sameAs IRI*;
-  rdagroup2elements:dateOfEstablishment IRI*;
-  rdagroup2elements:corporateHistory rdf:langString*;
-  rdaa:P50037 IRI*;
-  rdaa:P50031 IRI*;
-  rdagroup2elements:placeAssociatedWithTheCorporateBody IRI*;
+<organization> {
+ rdf:type  IRI*;
+ schema:name rdfs:label*;
+ skos:prefLabel rdf:langString*; 
+schema:deathDate xsd:string?;
+schema:birthDate xsd:string?;
+rdaa:P50016 IRI*;
+rdaa:P50012 IRI*;
+rdaa:P50025 xsd:string*;
+rdaa:P50037 xsd:string?;
+rdaa:P50038 xsd:string?;
+rdaa:P50041 rdf:langString*;
+rdaa:P50023 xsd:string*;
+rdaa:P50031 rdf:langString*;
+rdaa:P50035 rdf:langString*;
+rdaa:P50010 IRI?;
+rdaa:P50237 IRI*;
+rdaa:P50238 IRI*;
+rdaa:P50022 rdf:langString*;
+rdaa:P50008 rdf:langString*;
+rdaa:P50218 IRI*;
 }
