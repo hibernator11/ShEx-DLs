@@ -1,0 +1,11 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix schema: <http://schema.org/>
+
+
+start = @<publicationevent>
+<publicationevent> {
+  rdf:type  IRI?;
+ schema:organizer  IRI?;
+schema:startDate xsd:string?;
+schema:location xsd:string?;
+}
