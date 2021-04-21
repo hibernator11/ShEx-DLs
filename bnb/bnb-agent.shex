@@ -14,16 +14,16 @@ PREFIX rdau: <http://rdaregistry.info/Elements/u/>
 
 start = @<agent>
 <agent> {
- rdfs:label  xsd:string* ;
- schema:name xsd:string* ;
- schema:birthDate xsd:string* ;
- schema:deathDate xsd:string* ;
+ rdfs:label  xsd:string+ ;
+ schema:name xsd:string+ ;
+ schema:birthDate xsd:string? ;
+ schema:deathDate xsd:string? ;
  owl:sameAs IRI* ;
- foaf:givenName xsd:string* ;
- foaf:familyName xsd:string* ;
- foaf:name xsd:string* ;
+ foaf:givenName xsd:string? ;
+ foaf:familyName xsd:strin?* ;
+ foaf:name xsd:string? ;
  blterms:hasContributedTo IRI* ;
  blterms:hasCreated IRI* ;
  bio:event IRI* ;
- rdau:P60076 xsd:string* ;
+ rdau:P60076 xsd:string? ;
 }
