@@ -17,22 +17,22 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 
 start = @<manifestation>
 <manifestation> {
-rdam:P30011 IRI* ;
-dcterms:description xsd:string;
+rdam:P30011 IRI ;
+dcterms:description xsd:string*;
 rdfs:seeAlso IRI;
 rdam:P30176 xsd:string* ;
 rdam:P30135 IRI;
 rdarelationships:workManifested IRI;
 rdagroup1elements:note xsd:string* ;
 rdau:P60470 xsd:string* ;
-dcterms:publisher xsd:string* ;
+dcterms:publisher xsd:string? ;
 dcterms:title xsd:string ;
 dcterms:subject IRI* ;
 rdarelationships:expressionManifested IRI ;
-rdagroup1elements:placeOfPublication xsd:string* ;
-rdagroup1elements:dateOfPublicationManifestation IRI* ;
-rdam:P30088 xsd:string* ;
-rdam:P30139 IRI* ;
+rdagroup1elements:placeOfPublication xsd:string ;
+rdagroup1elements:dateOfPublicationManifestation IRI ;
+rdam:P30088 xsd:string+ ;
+rdam:P30139 IRI;
 rdagroup1elements:publishersName xsd:string* ;
 
 }
