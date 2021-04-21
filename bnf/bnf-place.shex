@@ -13,5 +13,5 @@ start = @<place>
 <place> { 
   foaf:page IRI*;
   owl:sameAs IRI*;
-  bnf-onto:cadreGeographique IRI*;
+  bnf-onto:cadreGeographique IRI+;
 }
