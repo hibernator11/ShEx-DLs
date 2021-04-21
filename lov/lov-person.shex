@@ -5,11 +5,10 @@ PREFIX vann:<http://purl.org/vocab/vann/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX voaf:<http://purl.org/vocommons/voaf#>
 
+
 start = @<person>
 <person> {
  rdf:type  IRI+ ;
  foaf:name xsd:string *;
- owl:sameAs IRI*;
+owl:sameAs IRI*;
 }
-
-
