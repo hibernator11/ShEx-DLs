@@ -1,18 +1,18 @@
 [   
     {
-        "schemaLabel": "LOV frbr-rda:Manifestation",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-manifestation.shex",
-        "dataLabel": "Get 100 items typed as manifestation from Linked Open Data vocabularies" ,
+        "schemaLabel": "LOV dcat:Catalog",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-catalog.shex",
+        "dataLabel": "Get 100 items typed as catalog from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
-        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?manifestation where {\r\n ?manifestation rdf:type frbr-rda:Manifestation\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX dcat:<http://www.w3.org/ns/dcat#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?c where {\r\n ?c rdf:type dcat:Catalog\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
-        "schemaLabel": "LOV frbr-rda:Manifestation",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-manifestation.shex",
-        "dataLabel": "Get all items typed as manifestation from Linked Open Data vocabularies" ,
+        "schemaLabel": "LOV dcat:Catalog",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-catalog.shex",
+        "dataLabel": "Get all items typed as catalog from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
-        "queryMap": "SPARQL '''PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>\r\n select ?manifestation where {\r\n ?manifestation rdf:type frbr-rda:Manifestation\r\n}'''@START",
+        "queryMap": "SPARQL '''PREFIX dcat:<http://www.w3.org/ns/dcat#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?c where {\r\n ?c rdf:type dcat:Catalog\r\n}\r\n'''@START",
         "status": "conformant"
     },    
     {
@@ -32,11 +32,27 @@
         "status": "conformant"
     },
     {
+        "schemaLabel": "LOV voaf:Vocabulary",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-vocabulary.shex",
+        "dataLabel": "Get 100 items typed as vocabulary from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX voaf:<http://purl.org/vocommons/voaf#> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?v where {\r\n ?v rdf:type voaf:Vocabulary\r\n}\r\n  limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "LOV voaf:Vocabulary",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-vocabulary.shex",
+        "dataLabel": "Get all items typed as vocabulary from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX voaf:<http://purl.org/vocommons/voaf#/> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?v where {\r\n ?v rdf:type voaf:Vocabulary\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
         "schemaLabel": "LOV foaf:Organization",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-organization.shex",
         "dataLabel": "Get 100 items typed as organization from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
-        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?org where {\r\n ?org rdf:type foaf:Organization\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX foaf:<http://xmlns.com/foaf/0.1/> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?org where {\r\n ?org rdf:type foaf:Organization\r\n}\r\n  limit 100'''@START",
         "status": "conformant"
     },
     {
@@ -44,24 +60,87 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-organization.shex",
         "dataLabel": "Get all items typed as organization from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
-        "queryMap": "SPARQL '''PREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\n select ?org where {\r\n ?org rdf:type foaf:Organization\r\n}\r\n'''@START",
+        "queryMap": "SPARQL '''PREFIX foaf:<http://xmlns.com/foaf/0.1/> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?org where {\r\n ?org rdf:type foaf:Organization\r\n}\r\n'''@START",
         "status": "conformant"
     },
-
-    {
-        "schemaLabel": "LOV skos:Concept",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-concept.shex",
-        "dataLabel": "Get 100 items typed as concept from Linked Open Data vocabularies" ,
+   {
+        "schemaLabel": "LOV dcat:CatalogRecord",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-conceptrecord.shex",
+        "dataLabel": "Get 100 items typed as conceptRecord from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
-        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#> \r\n select ?concept where {\r\n ?concept rdf:type skos:Concept\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX dcat:<http://www.w3.org/ns/dcat#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cr where {\r\n ?cr rdf:type dcat:CatalogRecord\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
-        "schemaLabel": "LOV skos:Concept",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-concept.shex",
-        "dataLabel": "Get all items typed as concept from Linked Open Data vocabularies" ,
+        "schemaLabel": "LOV dcat:CatalogRecord",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-conceptrecord.shex",
+        "dataLabel": "Get all items typed as conceptRecord from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
-        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#> \r\n select ?concept where {\r\n ?concept rdf:type skos:Concept\r\n}\r\n'''@START",
+        "queryMap": "SPARQL '''PREFIX dcat:<http://www.w3.org/ns/dcat#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?cr where {\r\n ?cr rdf:type dcat:CatalogRecord\r\n}\r\n'''@START",
+        "status": "conformant"
+    }
+    {
+        "schemaLabel": "LOV lexvo:Language",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-language.shex",
+        "dataLabel": "Get 100 items typed as language from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX lexvo:<http://lexvo.org/ontology#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?l where {\r\n ?l rdf:type lexvo:Language\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "LOV lexvo:Language",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-language.shex",
+        "dataLabel": "Get all items typed as language from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX lexvo:<http://lexvo.org/ontology#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?l where {\r\n ?l rdf:type lexvo:Language\r\n}\r\n'''@START",
+        "status": "conformant"
+    }
+    {
+        "schemaLabel": "LOV rev:Review",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-review.shex",
+        "dataLabel": "Get 100 items typed as review from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX 'rev:<http://purl.org/stuff/rev>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?r where {\r\n ?r rdf:type rev:Review\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "LOV rev:Review",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-review.shex",
+        "dataLabel": "Get all items typed as review from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX 'rev:<http://purl.org/stuff/rev>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?r where {\r\n ?r rdf:type rev:Review\r\n}\r\n'''@START",
+        "status": "conformant"
+    }
+    {
+        "schemaLabel": "LOV voaf:DatasetOccurrences",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-datasetoccurrences.shex",
+        "dataLabel": "Get 100 items typed as datasetoccurrences from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX voaf:<http://purl.org/vocommons/voaf#> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?d where {\r\n ?d rdf:type voaf:DatasetOccurrences\r\n}\r\n  limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "LOV voaf:DatasetOccurrences",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-datasetoccurrences.shex",
+        "dataLabel": "Get all items typed as datasetoccurrences from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX voaf:<http://purl.org/vocommons/voaf#/> \r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\n select ?d where {\r\n ?d rdf:type voaf:DatasetOccurrences\r\n}\r\n'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "LOV dcat:Distribution",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-distribution.shex",
+        "dataLabel": "Get 100 items typed as distribution from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX dcat:<http://www.w3.org/ns/dcat#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?d where {\r\n ?d rdf:type dcat:Distribution\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "LOV dcat:Distribution",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-distribution.shex",
+        "dataLabel": "Get all items typed as distribution from Linked Open Data vocabularies" ,
+        "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
+        "queryMap": "SPARQL '''PREFIX dcat:<http://www.w3.org/ns/dcat#>\r\n PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?d where {\r\n ?d rdf:type dcat:Distribution\r\n}\r\n'''@START",
         "status": "conformant"
     }
 ]
