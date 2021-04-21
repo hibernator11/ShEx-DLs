@@ -80,7 +80,7 @@
         "status": "conformant" 
     },
     {
-        "schemaLabel": "LOV voaf:DatasetOccurrences",
+        "schemaLabel": "LOV voaf:DatasetOcurrences",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov/lov-datasetocurrences.shex",
         "dataLabel": "Get 100 items typed as datasetocurrences from Linked Open Data vocabularies" ,
         "data": "Endpoint: https://lov.linkeddata.es/dataset/lov/sparql",
