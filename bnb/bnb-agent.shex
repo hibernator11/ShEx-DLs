@@ -20,7 +20,7 @@ start = @<agent>
  schema:deathDate xsd:string? ;
  owl:sameAs IRI* ;
  foaf:givenName xsd:string? ;
- foaf:familyName xsd:strin?* ;
+ foaf:familyName xsd:string? ;
  foaf:name xsd:string? ;
  blterms:hasContributedTo IRI* ;
  blterms:hasCreated IRI* ;
