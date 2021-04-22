@@ -1,0 +1,30 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfschema: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX vann:<http://purl.org/vocab/vann/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX voaf:<http://purl.org/vocommons/voaf#>
+PREFIX rev: <http://purl.org/stuff/rev#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<vocabulary>
+<vocabulary> {
+rdf:type IRI+;
+dct:modifed xsd:date*;
+vann:preferredNamespacePrefix xsd:string;
+vann:preferredNamespaceUri xsd:string*;
+foaf:homePage IRI*;
+dct:contributor IRI*;
+dct:publlisher IRI*;
+rdfschema:isDefinedBy IRI*;
+dct:creator IRI*;
+dct:language  IRI*;
+dct:title xsd:string;
+dct:description rdf:langString*;
+dct:publlisher IRI*;
+dcat:distribution IRI*;
+dcat:keyword xsd:string;
+}
