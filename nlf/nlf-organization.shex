@@ -16,7 +16,7 @@ schema:deathDate xsd:string?;
 schema:birthDate xsd:string?;
 rdaa:P50016 IRI*;
 rdaa:P50012 IRI*;
-rdaa:P50025 xsd:string*;
+rdaa:P50025 xsd:string OR rdf:langString*;
 rdaa:P50037 xsd:string?;
 rdaa:P50038 xsd:string?;
 rdaa:P50041 rdf:langString*;
