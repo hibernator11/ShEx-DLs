@@ -20,7 +20,7 @@ foaf:homePage IRI*;
 dct:contributor IRI*;
 dct:publlisher IRI*;
 rdfschema:isDefinedBy IRI*;
-dct:creator IRI*;
+dct:creator IRI+;
 dct:language  IRI*;
 dct:title xsd:string;
 dct:description rdf:langString*;
