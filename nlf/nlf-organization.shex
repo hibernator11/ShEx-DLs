@@ -9,9 +9,9 @@ prefix schema: <http://schema.org/>
 
 start = @<organization>
 <organization> {
- rdf:type  IRI*;
- schema:name rdfs:label*;
- skos:prefLabel rdf:langString*; 
+  rdf:type  IRI*;
+schema:name xsd:string OR rdfs:label*;
+skos:prefLabel rdf:langString*; 
 schema:deathDate xsd:string?;
 schema:birthDate xsd:string?;
 rdaa:P50016 IRI*;
@@ -23,10 +23,11 @@ rdaa:P50041 rdf:langString*;
 rdaa:P50023 xsd:string*;
 rdaa:P50031 rdf:langString*;
 rdaa:P50035 rdf:langString*;
-rdaa:P50010 IRI?;
-rdaa:P50237 IRI*;
+rdaa:P50010 IRI*;
+rdaa:P50237 rdf:langString OR IRI*;
 rdaa:P50238 IRI*;
 rdaa:P50022 rdf:langString*;
-rdaa:P50008 rdf:langString*;
-rdaa:P50218 IRI*;
+rdaa:P50008 rdf:langString OR IRI*;
+rdaa:P50218  IRI*;
+
 }
