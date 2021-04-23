@@ -10,6 +10,6 @@ start = @<catalog>
 dct:modifed xsd:string*;
 dct:license IRI+;
 dct:title rdf:langString+;
-dct:description rdf:langString+;
+dct:description rdf:langString*;
 dcat:record IRI*;
 }
