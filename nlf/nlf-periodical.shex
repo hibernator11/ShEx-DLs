@@ -17,7 +17,7 @@ schema:inLanguage xsd:string+ ;
 schema:bookFormat IRI* ;
 schema:url IRI? ;
 schema:issn xsd:string* ;
-schema:sameAs IRI+ ;
+schema:sameAs IRI* ;
 rdau:P60048 IRI? ;
 rdau:P60049 IRI* ;
 rdau:P60050 IRI? ;
