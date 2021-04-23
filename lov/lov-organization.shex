@@ -9,6 +9,6 @@ PREFIX voaf:<http://purl.org/vocommons/voaf#>
 start = @<organization>
 <organization> {
  rdf:type  IRI+ ;
- foaf:name xsd:string *;
+ foaf:name xsd:string+;
 owl:sameAs IRI*;
 }
