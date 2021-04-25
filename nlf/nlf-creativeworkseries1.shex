@@ -10,7 +10,7 @@ schema:name xsd:string+ ;
 schema:description xsd:string* ;
 schema:about IRI* ;
 schema:url IRI? ;
-schema:isPartOf IRI+ ;
+schema:isPartOf IRI* ;
 schema:issn xsd:string* ;
 schema:contributor IRI* ;
 schema:traslationOfWork IRI* ;
