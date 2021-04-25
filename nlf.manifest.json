@@ -143,6 +143,22 @@
         "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?p where {\r\n ?p rdf:type schema:Periodical\r\n}'''@START",
         "status": "conformant"
     },
+    {
+        "schemaLabel": "NLF schema:Periodical2",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-periodical2.shex",
+        "dataLabel": "Get 100 items typed as periodical from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?p where {\r\n ?p rdf:type schema:Periodical\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "NLF schema:Periodical2",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-periodical2.shex",
+        "dataLabel": "Get all items typed as periodical from the National Library of Finland" ,
+        "data": "Endpoint: https://data.nationallibrary.fi/bib/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/> \r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n select ?p where {\r\n ?p rdf:type schema:Periodical\r\n}'''@START",
+        "status": "conformant"
+    },
      {
         "schemaLabel": "NLF schema:Collection",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/nlf/nlf-collection.shex",
