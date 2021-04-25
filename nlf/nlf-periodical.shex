@@ -8,7 +8,7 @@ start = @<periodical>
  rdf:type IRI*;
 schema:name xsd:string+ ;
 schema:description xsd:string* ;
-schema:isPartOf IRI+ ;
+schema:isPartOf IRI* ;
 schema:WorkExample IRI* ;
 schema:exampleOfWork IRI* ;
 schema:traslationOfWork IRI* ;
