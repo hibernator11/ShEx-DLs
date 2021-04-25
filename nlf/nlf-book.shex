@@ -9,7 +9,7 @@ start = @<book>
  rdf:type IRI+;
 schema:name xsd:string ;
 schema:description xsd:string* ;
-schema:isPartOf IRI+ ;
+schema:isPartOf IRI* ;
 schema:exampleOfWork IRI* ;
 schema:bookFormat IRI* ;
 schema:url IRI? ;
