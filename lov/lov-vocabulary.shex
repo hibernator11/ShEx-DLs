@@ -20,11 +20,11 @@ foaf:homePage IRI*;
 dct:contributor IRI*;
 dct:publlisher IRI*;
 rdfschema:isDefinedBy IRI*;
-dct:creator IRI+;
+dct:creator xsd:string OR IRI+;
 dct:language  IRI*;
-dct:title xsd:string;
-dct:description rdf:langString*;
-dct:publlisher IRI*;
+dct:title xsd:string OR rdf:langString*;
+dct:description xsd:string OR rdf:langString*;
+dct:publisher IRI*;
 dcat:distribution IRI*;
 dcat:keyword xsd:string;
 }
