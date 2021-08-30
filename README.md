@@ -21,7 +21,7 @@ Shape Expressions for evaluating data quality in LOD published by libraries
 ### Note
 This work has been published in the article 'A Shape Expression approach for assessing the quality of Linked Open Data in Libraries'.
 
-# References
+### References
 Gustavo Candela, Pilar Escobar, María Dolores Sáez and Manuel Marco-Such. A Shape Expression approach for assessing the quality of Linked Open Data in Libraries. Semantic Web Journal. 2020. Preprint version: http://www.semantic-web-journal.net/content/shape-expression-approach-assessing-quality-linked-open-data-libraries
 
 Candela G, Escobar P, Carrasco RC, Marco-Such M. Evaluating the quality of linked open data in digital libraries. Journal of Information Science. August 2020. doi:10.1177/0165551520930951
