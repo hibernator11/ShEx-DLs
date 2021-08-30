@@ -18,7 +18,7 @@ Shape Expressions for evaluating data quality in LOD published by libraries
 
 [ShEx validation tool Linked Open Vocabularies (LOV)](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/ShEx-DLs/master/lov.manifest.json)
 
-# Note
+### Note
 This work has been published in the article 'A Shape Expression approach for assessing the quality of Linked Open Data in Libraries'.
 
 # References
